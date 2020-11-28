@@ -10,7 +10,100 @@
       href="./images/favicon-32x32.png"
     />
     <title>Chat App CSS Illustration</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendors/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <!-- ***backgrounds*** -->
+      <div class="bg bt-top"></div>
+      <div class="bg bt-bottom"></div>
+      <!-- ***app illustration*** -->
+      <div class="mobile-container">
+        <div class="mobile-screen">
+          <div class="camera-cutout"></div>
+          <header class="chat-header">
+            <i class="fas fa-chevron-left"></i>
+            <img
+              src="./images/avatar.jpg"
+              alt="Profile picture"
+              class="profile-pic"
+            />
+            <div class="contact-name-status">
+              <h4 class="contact-name">Samuel Green</h4>
+              <p class="status">Available to Walk</p>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </header>
+          <div class="chat-body">
+            <p class="chat chat-received">
+              That sounds great. i'd be happy to discuss more.
+            </p>
+            <p class="chat chat-received">
+              Could you send over some pictures of your dog please?
+            </p>
+            <div class="images-sent">
+              <img
+                src="./images/dog-image-1.jpg"
+                alt="Dog smiling"
+                class="img-sent"
+              />
+              <img
+                src="./images/dog-image-2.jpg"
+                alt="Dog relaxing at the beach"
+                class="img-sent"
+              />
+              <img
+                src="./images/dog-image-3.jpg"
+                alt="Dog lifting heavy wood"
+                class="img-sent"
+              />
+            </div>
+            <p class="chat chat-sent">
+              Here are a few pictures. She's a happy girl!
+            </p>
+            <p class="chat chat-sent">Can you make it?</p>
+            <p class="chat chat-received">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+            <div class="chat chat-received chat-money">
+              <i class="far fa-circle"></i>
+              <p class="walk-duration">30 minute walk</p>
+              <p class="walk-price">$29</p>
+            </div>
+            <div class="chat chat-received chat-money">
+              <i class="far fa-circle"></i>
+              <p class="walk-duration">1 hour walk</p>
+              <p class="walk-price">$49</p>
+            </div>
+            <div class="input-field-container">
+              <label for="message">
+                <input
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Type a message..."
+              /></label>
+              <i class="fas fa-chevron-circle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <h2 class="details-heading">Simple booking</h2>
+        <p class="details-info">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
