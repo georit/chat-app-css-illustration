@@ -36,7 +36,6 @@ body {
 
 body,
 .wrapper {
-  max-width: 1980px;
   min-height: 100vh;
 }
 
@@ -52,7 +51,8 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 3rem 0;
+  max-width: 1980px;
+  padding: 1rem 0;
   position: relative;
 }
 
@@ -230,12 +230,12 @@ header.chat-header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0 0.5rem;
-  width: 70%;
+  width: 65%;
 }
 
 .img-sent {
   border-radius: 12px;
-  width: 55px;
+  width: 50px;
   height: auto;
 }
 
@@ -328,4 +328,48 @@ header.chat-header {
 .details-info {
   color: var(--dark-grayish-violet);
   line-height: 1.4;
+}
+
+/* *****media queries***** */
+@media screen and (min-width: 768px) {
+  /* *****wrapper***** */
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+  }
+
+  /* ***backgrounds*** */
+  .bg-top,
+  .bg-bottom {
+    height: 85vh;
+    width: 33vw;
+  }
+
+  .bg-top {
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    left: -10%;
+  }
+
+  .bg-bottom {
+    background-color: hsla(276, 100%, 81%, 0.1);
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    right: -10%;
+  }
+
+  /* *****details***** */
+  .details {
+    width: 40%;
+    max-width: 577px;
+    padding: 0 0 0 10%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .wrapper {
+    box-shadow: 0 4px 10px hsla(0, 0%, 0%, 0.1);
+  }
 }
