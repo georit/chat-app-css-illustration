@@ -21,14 +21,19 @@
   <body>
     <div class="wrapper">
       <!-- ***backgrounds*** -->
-      <div class="bg bt-top"></div>
-      <div class="bg bt-bottom"></div>
+      <div class="bg bg-top"></div>
+      <div class="bg bg-bottom"></div>
       <!-- ***app illustration*** -->
       <div class="mobile-container">
         <div class="mobile-screen">
-          <div class="camera-cutout"></div>
+          <div class="camera-cutout">
+            <div class="camera camera-1"></div>
+            <div class="camera camera-2"></div>
+            <div class="speaker"></div>
+            <div class="camera camera-3"></div>
+          </div>
           <header class="chat-header">
-            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-left icon-back"></i>
             <img
               src="./images/avatar.jpg"
               alt="Profile picture"
@@ -38,7 +43,7 @@
               <h4 class="contact-name">Samuel Green</h4>
               <p class="status">Available to Walk</p>
             </div>
-            <i class="fas fa-ellipsis-v"></i>
+            <i class="fas fa-ellipsis-v icon-options"></i>
           </header>
           <div class="chat-body">
             <p class="chat chat-received">
@@ -83,14 +88,10 @@
               <p class="walk-price">$49</p>
             </div>
             <div class="input-field-container">
-              <label for="message">
-                <input
-                  type="text"
-                  name="message"
-                  id="message"
-                  placeholder="Type a message..."
-              /></label>
-              <i class="fas fa-chevron-circle-right"></i>
+              <p class="placeholder-text">Type a message...</p>
+              <div class="icon-send">
+                <i class="fas fa-chevron-right"></i>
+              </div>
             </div>
           </div>
         </div>
