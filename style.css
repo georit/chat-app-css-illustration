@@ -203,6 +203,7 @@ header.chat-header {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0.8rem 0.5rem;
+  overflow: hidden;
 }
 
 .chat {
@@ -211,17 +212,27 @@ header.chat-header {
   padding: 0.5rem;
 }
 
+.chat-received,
+.images-sent,
+.chat-sent {
+  position: relative;
+}
+
 .chat-received {
   background-color: hsla(276, 55%, 52%, 0.08);
   border-radius: 12px 12px 12px 0;
   color: var(--moderate-violet);
   margin-bottom: 0.5rem;
   width: 55%;
+  right: 100%;
+  transition: right 1s ease;
 }
 
 .images-sent,
 .chat-sent {
   align-self: flex-end;
+  left: 100%;
+  transition: left 1s ease;
 }
 
 .images-sent {
